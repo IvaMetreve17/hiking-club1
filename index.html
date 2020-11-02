@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Club for Volunteers">
+    <meta name="author" content="ivane metreveli">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>მოლაშქრეთა კლუბი</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <nav class="nav-class">
+        <ul>
+            <li class="nav-li"><a href="#home">მთავარი</a></li>
+            <li class="nav-li"><a href="#ourtour">ჩვენი ტურები</a></li>            
+            <li class="nav-li"><a href="#contact">კონტაქტი</a></li>
+            <li class="nav-li"><a href="#registr-section">რეგისტრაცია</a></li>
+            <li class="nav-li"><a href="#ourteam">ჩვენი კლუბის წევრები</a></li>
+        </ul>
+    </nav>
+
+     <section id="about">
+        <H1 class="tour"> ჩვენს შესახებ </H1>            
+        <div class="div-about">
+            <p>ესაა სოციალური კლუბი, სადაც სტუდენტები ერთიანდებიან იმისთვის, რომ ექსკურსიებზე იარონ და ისაუბრონ ინგლისურად, რაც კლუბის წევრობის აუცილებელი პირობაა.
+                <br> ექსკურსიები ეწყობა ყოველ სამ კვირაში ერთხელ, მარშრუტი კი ყოველ ჯერზე სხვადასხვაა.
+                <br> თუ შენც გსურს გახდე ჩვენი ჯგუფის წევრი დარეგისტრირდეი და შემოგვიერთდი 
+            </p>
+        </div>
+     </section>
+
+     <section id="h-about">
+        <H1 id="ourtour" class="tour">ტურები საქართველოში</H1>
+
+        <div class="touringeorgia">
+            <ul>
+                <li class="tour-li">
+                    <h2>უძირო ტბა</h2>
+                    <iframe width="400" height="315" src="https://www.youtube.com/embed/2OWEc14uhj8" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                </li>
+                
+                <li class="tour-li">
+                   <h2>ყელიწადის ტბა</h2>
+                   <iframe width="400" height="315" src="https://www.youtube.com/embed/9VANpdH5UKg" frameborder="0" 
+                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </li>
+               <li class="tour-li">
+                   <h2>ასხის მასივი</h2>
+                   <iframe width="400" height="315" src="https://www.youtube.com/embed/3l_6kZ5YeKY" 
+                   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                   allowfullscreen></iframe>
+               </li>
+               <li class="tour-li">
+                   <h2>თრუსოს ხეობა</h2>
+                   <iframe width="400" height="315" src="https://www.youtube.com/embed/ycsXIALx5ZM" 
+                   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                   allowfullscreen></iframe>
+               </li>
+               <li class="tour-li">
+                   <h2>შავი კლდეების ტბა</h2>
+                   <iframe width="400" height="315" src="https://www.youtube.com/embed/RTECP2YuSbU" 
+                   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                   allowfullscreen></iframe>
+               </li>
+               <li class="tour-li">
+                   <h2>არხოტი</h2>
+                   <iframe width="400" height="315" src="https://www.youtube.com/embed/Jvu2h6ZE0aY" 
+                   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                   allowfullscreen></iframe>
+               </li>
+            </ul>
+            
+        </div>
+     </section>
+
+     <section class="last-section">
+        
+        
+        <div id="registr-section">
+            <div></div>
+            <H1 class="tour">სარეგისტრაციო ფორმა</H1>
+               <form class="reg-div" id="registration" action="" method="POST", >
+   
+                   
+                    <div class="reg-form" >
+                        <input type="text" name="username" placeholder="მომხმარებლის სახელი">
+                        <div id="error_username" class="error"></div>
+                    </div>
+                  
+                    <div class="reg-form">
+                        <input type="email" name="email" placeholder="მეილი">
+                        <div id="error_email" class="error"></div>
+                        
+                    </div>
+
+                    <div class="reg-form">
+                        <input type="tel" name="phonenumber" placeholder="მობილურის ნომერი">
+                        <div id="error_phonenumber" class="error"></div>
+                    </div>
+            
+                    <div class="reg-form">
+                        <input type="number" name="age" placeholder="ასაკი">
+                        <div id="error_age" class="error"></div>
+                    </div>
+                
+                    <div class="reg-form">
+                        <input type="password" name="password" placeholder="პაროლი">
+                        <div id="error_password" class="error"></div>
+                    </div>
+            
+                    <div class="reg-form">
+                        <input type="password" name="password2" placeholder="გაიმეორეთ პაროლი">
+                        <div id="error_password2" class="error"></div>
+                    </div>
+                    <div class="reg-form">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">კაცი</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">ქალი</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">სხვა</label>
+                    </div>
+            
+                   
+           
+                   <div class="reg-form">
+                       <button type="submit">
+                           რეგისტრაცია
+                       </button>
+                   </div>
+           
+               </form>
+               
+
+        </div>
+        <div id="ourteam" class="ourteam">
+            <H1 class="tour">ჩვენი კლუბის წევრები</H1>
+            <div class="team-list">
+                <ul id="people-list"></ul>
+            </div>
+        </div>
+     
+     </section>
+     <div class="contact"  id="contact">
+        <h1 class="h-about">საკონტაქტო მონაცემები</h1>
+        <dev class="contactinfo">
+           <h3>Email:<a href="mailto:email:tourinGeorgia@gmail.com">tourinGeorgia@gmail.com</a></h3>
+           <h3 class="tel">Tel:322 00 00 00 00</h3>
+        </dev>
+    </div>
+     
+     <div class="anime">
+         <img class="logo-anime" src="img/anime.png" alt="anime logo">
+     </div>
+     <div class="anime2">
+        <img class="logo-anime" src="img/anime.png" alt="anime logo">
+    </div>
+
+     <script src="scrift.js"></script>
+
+ 
+
+</body>
+</html>
